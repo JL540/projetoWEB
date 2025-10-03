@@ -1,0 +1,42 @@
+
+/*Estilos das listas*/
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+/*ESTILO DOS TEMAS*/
+
+/*raiz que representa o elemento <html> da página*/
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+.light-theme{
+    --bg: var(--green);
+    --fontColor: var(--black);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--green);
+}
+
+/*seletor universal*/
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
